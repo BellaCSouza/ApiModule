@@ -69,6 +69,7 @@ namespace ApiModule.Controllers
             }
 
             _context.Contacts.Remove(contactDB);
+            _context.SaveChanges();
             return NoContent();
         }
 
